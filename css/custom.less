@@ -25,6 +25,7 @@ p {
             &.active {
                 a {
                     border-color: #c76501 !important;
+                    color: #c76501 !important;
                 }
             }
         }
@@ -98,17 +99,28 @@ footer {
         font-weight: normal;
     }
 
-    3 #home {
+    #home {
         #home-hero {
-            background: url(../images/imagen1.jpg) no-repeat 0px 0px / cover;
+            background: url(../images/imagen1.jpg) no-repeat 0px 0px / cover !important;
+            height: 400px
         }
+        .img-content {
+        	display: none;
+        }
+    }
+
+    #whychooseus {
+    	background-position: 0px 160px !important;
     }
 
     #contact-us {
         p {
             a {
-                font-size: 1rem;
+                font-size: 1.6rem;
             }
+        }
+        #contact-us-channels {
+        	margin-top: 24px;
         }
     }
 
