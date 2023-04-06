@@ -1,3 +1,12 @@
+.section, section {
+    padding-top: 120px !important;
+
+    &#home {
+    	margin-top: 90px;
+    	padding-top: 0 !important;
+    }
+}
+
 p {
     font-size: 1.6rem;
 }
@@ -90,6 +99,10 @@ footer {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 767px) {
 
+    .section {
+        padding-top: 80px;
+    }
+
     p {
         font-size: 1.4rem;
     }
@@ -104,13 +117,14 @@ footer {
             background: url(../images/imagen1.jpg) no-repeat 0px 0px / cover !important;
             height: 400px
         }
+
         .img-content {
-        	display: none;
+            display: none;
         }
     }
 
     #whychooseus {
-    	background-position: 0px 160px !important;
+        background-position: 0px 160px !important;
     }
 
     #contact-us {
@@ -119,8 +133,9 @@ footer {
                 font-size: 1.8rem;
             }
         }
+
         #contact-us-channels {
-        	margin-top: 30px !important;
+            margin-top: 30px !important;
         }
     }
 
