@@ -1,82 +1,115 @@
-
-
+p {
+    font-size: 1.6rem;
+}
 
 .img-content {
-	width: inherit;
-	display: block;
+    width: inherit;
+    display: block;
 }
 
 .as-title {
-	font-size: 3rem;
-	font-weight: normal;
+    font-size: 2.5rem;
+    font-weight: normal;
 }
 
 .navbar {
 
-	&.navbar-custom {
-		background: #000;
-	}
+    &.navbar-custom {
+        background: #000;
+    }
 
-	.navbar-nav {
-	margin-top: 20px;
-	li {
-		&.active {
-			a {
-				border-color: #c76501 !important;
-			}
-		}
-	}
-}
+    .navbar-nav {
+        margin-top: 20px;
 
-.navbar-brand {
-	&.logo {
-		display: block;
-		height: auto;
-		.img-content {
-			width: 200px;
-			display: block;
-		}
-	}
-}
+        li {
+            &.active {
+                a {
+                    border-color: #c76501 !important;
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        &.logo {
+            display: block;
+            height: auto;
+
+            .img-content {
+                width: 200px;
+                display: block;
+            }
+        }
+    }
 
 }
 
 
 #home {
-	.carousel-inner {
-		.slide-content {
-			position: relative;
-			&.item {
-				height: fit-content;
-			}
-		}
-	}
+    .carousel-inner {
+        .slide-content {
+            position: relative;
 
-	#img-hero-1 {
-		width: 100%;
-		max-width: 700px;
-	}
-	#img-hero-2 {
-	    position: absolute;
-	    width: auto;
-	    right: -10px;
-	    bottom: 0;
-	    left: auto;
-	}
+            &.item {
+                height: fit-content;
+            }
+        }
+    }
+
+    #img-hero-1 {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    #img-hero-2 {
+        position: absolute;
+        width: auto;
+        right: -10px;
+        bottom: 0;
+        left: auto;
+    }
 }
 
 #contact-us {
-	p {
-		a {
-			font-size: 2rem;
-			color: #333;
-			margin-left: 8px;
-		}
-	}
+    p {
+        a {
+            font-size: 2rem;
+            color: #333;
+            margin-left: 8px;
+        }
+    }
 }
 
 footer {
-	&.bg-dark {
-		background-color: #000 !important;
-	}
+    &.bg-dark {
+        background-color: #000 !important;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 767px) {
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .as-title {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    3 #home {
+        #home-hero {
+            background: url(../images/imagen1.jpg) no-repeat 0px 0px / cover;
+        }
+    }
+
+    #contact-us {
+        p {
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
 }
