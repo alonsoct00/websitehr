@@ -107,11 +107,19 @@ footer {
     }
 }
 
+.hidden-lg-up {
+    display: none;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 767px) {
 
     .section {
-        padding-top: 80px;
+        padding-top: 60px !important;
+    }
+
+    .only-mobile {
+        display: block !important;
     }
 
     p {
@@ -119,23 +127,32 @@ footer {
     }
 
     .as-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: normal;
     }
 
     #home {
         #home-hero {
-            background: url(../images/imagen1.webp) no-repeat 0px 0px / cover !important;
-            height: 400px
-        }
+            background: none !important;
+            height: fit-content;
+            min-height: 100% !important;
 
-        .img-content {
-            display: none;
+            img {
+                width: 100%;
+            }
         }
     }
 
     #whychooseus {
-        background-position: 0px 160px !important;
+        background: none !important;
+        height: fit-content !important;
+
+        .row {
+            img.section-img {
+                width: 100%;
+            }
+        }
+
     }
 
     #contact-us {

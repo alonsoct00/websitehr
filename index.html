@@ -14,7 +14,7 @@
     <!--ET-LINE-ICON-->
     <link rel="stylesheet" type="text/css" href="css/et-lineicon.css" />
     <!-- Materialdesign  Css-->
-    <!--<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
     <!-- popup-->
     <!--<link rel="stylesheet" href="css/magnific-popup.css" />-->
     <!--slider image-->
@@ -79,6 +79,9 @@
                     <!-- Item 1 -->
                     <div id="home-hero" class="item active slide-content" style="background-image: url('images/imagen1.webp'); min-height: 90vh;">
                         <div class="bg-overlay" style="display: none;"></div>
+                        <div class="only-mobile hidden-lg-up">
+                            <span class="img-content"><img src="images/home-hero-bg-mobile.webp" alt="Welcome - HR" class="img-responsive"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,6 +94,7 @@
             <div class="row">
                 <div class="text-center">
                     <h2 class="section-title mb-3">About Us</h2>
+                    <img src="images/title-border.png" alt="" class="img-responsive center-block" /> 
                 </div>
             </div>
             <div class="row">
@@ -118,6 +122,7 @@
             <div class="row">
                 <div class="text-center">
                     <h2 class="section-title mb-3">Services</h2>
+                    <img src="images/title-border.png" alt="" class="img-responsive center-block" /> 
                 </div>
             </div>
             <div class="row">
@@ -206,16 +211,18 @@
     <section class="section" id="whychooseus" style="height: 100vh; background: url(images/whychooseus.webp) no-repeat 0px 0px / cover;">
         <div class="container">
             <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center">
-                            <h2 class="section-title mb-3">WHY CHOOSE US?</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-7 m-auto text-center">
-                            <p class="as-title mt-5">We are women-owned and operated small business on a mission to share our knowledge and expertise to companies like you who are looking to level-up their employee resources.</p>
-                        </div>
+                <div class="text-center">
+                    <h2 class="section-title mb-3">WHY CHOOSE US?</h2>
+                    <img src="images/title-border.png" alt="" class="img-responsive center-block" /> 
+                </div>
+                <div class="col-md-7 m-auto text-center">
+                    <p class="as-title mt-5">We are women-owned and operated small business on a mission to share our knowledge and expertise to companies like you who are looking to level-up their employee resources.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="only-mobile hidden-lg-up">
+                        <span class="img-content"><img src="images/services-bg-mobile.webp" alt="Why choose us - HR" class="img-responsive img-section"></span>
                     </div>
                 </div>
             </div>
@@ -226,8 +233,9 @@
     <section class="section" id="contact-us" style="height: 100vh; background: url(images/forma-contact-01.webp) no-repeat right bottom / 60%">
         <div class="container">
             <div class="row">
-                <div class="text-center">
-                    <h2 class="section-title mb-3">CONTACT</h2>
+                <div class="text-center mb-5">
+                    <h2 class="section-title">CONTACT</h2>
+                    <img src="images/title-border.png" alt="" class="img-responsive center-block" /> 
                 </div>
             </div>
             <div class="row d-flex flex-wrap">
@@ -272,7 +280,7 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Jquery stellar for Parallax -->
-    <script src="js/parallax.min.js" async></script>
+    <!--<script src="js/parallax.min.js" async></script>-->
     <!-- Jquery easing -->
     <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
     <script src="js/jquery.counterup.min.js" type="text/javascript" async></script>
@@ -284,9 +292,7 @@
     <script type="text/javascript" src="js/owl.carousel.min.js" async></script>
     <!-- Sticky Header -->
     <script src="js/jquery.sticky.js" defer></script>
-
     <script src="js/app.js" defer></script>
-    
 </body>
 
 </html>
