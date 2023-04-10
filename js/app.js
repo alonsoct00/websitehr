@@ -24,6 +24,7 @@ var RictorApp = (function() {
     var portfolioContainer = $(".projects-wrapper");
     var portfolioFilter = $('#filter');
     var masonryEls = $(".masonry");
+    var hamburguer = $(".navbar-toggle");
 
 
     //magnify popup
@@ -34,9 +35,9 @@ var RictorApp = (function() {
             closeOnContentClick: true,
             mainClass: 'mfp-fade',
             gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image 
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image 
             }
         });
 
@@ -51,41 +52,47 @@ var RictorApp = (function() {
         });
     };
 
+    hamburguer.click(function() {
+        $(this).toggleClass('open-menu');
+    });
+
+
+
     var initMasonnry = function() {
-          // Initialize isotope 
-          portfolioContainer.isotope({
+        // Initialize isotope 
+        portfolioContainer.isotope({
             filter: '*',
             layoutMode: 'masonry',
             animationOptions: {
-              duration: 750,
-              easing: 'linear'
+                duration: 750,
+                easing: 'linear'
             }
-          });
+        });
 
         //Masonry
-        masonryEls.imagesLoaded(function(){
+        masonryEls.imagesLoaded(function() {
             masonryEls.masonry();
         });
 
-          // Filter items when filter link is clicked
-          portfolioFilter.find('a').click(function (e) {
+        // Filter items when filter link is clicked
+        portfolioFilter.find('a').click(function(e) {
             e.preventDefault();
 
             var selector = $(this).attr('data-filter');
             portfolioFilter.find('a').removeClass('current');
             $(this).addClass('current');
             portfolioContainer.isotope({
-              filter: selector,
-              animationOptions: {
-                animationDuration: 750,
-                easing: 'linear',
-                queue: false,
-              }
+                filter: selector,
+                animationOptions: {
+                    animationDuration: 750,
+                    easing: 'linear',
+                    queue: false,
+                }
             });
 
             return false;
-          });
-      };  
+        });
+    };
 
     //on window load call back function
     var onWinLoad = function(e) {
@@ -114,10 +121,10 @@ var RictorApp = (function() {
 
         //owlCarousel
         owlCarouselDemo.owlCarousel({
-            navigation : false, 
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem:true
+            navigation: false,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true
         });
 
         //maginify
